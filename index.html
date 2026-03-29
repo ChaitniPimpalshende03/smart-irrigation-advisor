@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Irrigation Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌱 Smart Irrigation Advisor</h1>
+        <p>Optimize your water usage based on soil & weather conditions</p>
+
+        <div class="form">
+            <label>Soil Type:</label>
+            <select id="soil">
+                <option value="Sandy">Sandy</option>
+                <option value="Clay">Clay</option>
+                <option value="Loamy">Loamy</option>
+            </select>
+
+            <label>Moisture Level:</label>
+            <select id="moisture">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <label>Temperature (°C):</label>
+            <input type="number" id="temp" placeholder="Enter temperature">
+
+            <button onclick="calculateIrrigation()">Check Recommendation</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
